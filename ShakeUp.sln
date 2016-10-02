@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShakeUp.CSharp.Plugins", "ShakeUp.CSharp.Plugins.csproj", "{8EECFB04-CBE1-637E-B293-0645CF6720E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShakeUp.CSharp", "ShakeUp.CSharp.csproj", "{2D2588CD-083F-3D41-87AF-389524D92A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShakeUp.CSharp.Editor", "ShakeUp.CSharp.Editor.csproj", "{91797C5F-4558-3DE0-D89A-A010D54BCE90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EECFB04-CBE1-637E-B293-0645CF6720E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EECFB04-CBE1-637E-B293-0645CF6720E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EECFB04-CBE1-637E-B293-0645CF6720E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EECFB04-CBE1-637E-B293-0645CF6720E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2588CD-083F-3D41-87AF-389524D92A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2588CD-083F-3D41-87AF-389524D92A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2588CD-083F-3D41-87AF-389524D92A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2588CD-083F-3D41-87AF-389524D92A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91797C5F-4558-3DE0-D89A-A010D54BCE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91797C5F-4558-3DE0-D89A-A010D54BCE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91797C5F-4558-3DE0-D89A-A010D54BCE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91797C5F-4558-3DE0-D89A-A010D54BCE90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
