@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-    float speed = 2f;
+    float speed = 0.3f;
     public int id;
 
     public GameObject proj;
@@ -38,7 +38,13 @@ public class PlayerScript : MonoBehaviour {
         axis_val += (Input.GetKey(move_right)) ? 1 : 0;
         /*/
 
-        float axis_val = (id == 0) ? Input.GetAxis("Horizontal1") : Input.GetAxis("Horizontal2");
+        string axis_label = (id == 0) ? "Horizontal1" : "Horizontal2";
+        float axis_val = Input.GetAxis(axis_label);
+        if (axis_val != 0)
+        {
+            axis_val /= Mathf.Abs(axis_val);
+        }
+
         transform.position += Vector3.right * speed * axis_val;
         return;
     }
@@ -103,6 +109,7 @@ public class PlayerScript : MonoBehaviour {
         float input = GetComponent<Rigidbody2D>().gravityScale;
         return (int) (input / Mathf.Abs(input));
     }
+
 
     public void projSignal(int id)
     {
