@@ -90,8 +90,7 @@ public class ProjectileScript : MonoBehaviour {
             normal += (Vector3) col.contacts[i].normal;
         }
         normal /= col.contacts.Length;
-        Debug.Log(normal + " " + direction);
-
+ 
         direction = Vector3.Reflect(direction, normal);
         transform.up = direction;
 
@@ -105,6 +104,8 @@ public class ProjectileScript : MonoBehaviour {
 
     void OnBecameInvisible()
     {
+        if (!this.isActiveAndEnabled)
+            return;
         Camera camera = Camera.main;
         float left_x = camera.ScreenToWorldPoint(new Vector3(0, 0, 0)).x;
         float right_x = camera.ScreenToWorldPoint(new Vector3(camera.pixelWidth, 0, 0)).x;

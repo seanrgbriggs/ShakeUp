@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-    float speed = 0.3f;
+    float speed = 2f;
     public int id;
 
     public GameObject proj;
@@ -40,12 +40,12 @@ public class PlayerScript : MonoBehaviour {
 
         string axis_label = (id == 0) ? "Horizontal1" : "Horizontal2";
         float axis_val = Input.GetAxis(axis_label);
-        if (axis_val != 0)
-        {
-            axis_val /= Mathf.Abs(axis_val);
-        }
 
-        transform.position += Vector3.right * speed * axis_val;
+        Vector3 delta = Vector3.right * speed * axis_val;
+        delta = delta.normalized * Mathf.Min(0.5f , delta.magnitude);
+
+
+        transform.position += delta;
         return;
     }
 
